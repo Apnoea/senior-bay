@@ -1,2 +1,15 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+* text eol=lf
+
+# Graphics
+*.gif   binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.webp  binary
+
+# Video
+*.mp4   binary
+
+# Fonts
+*.woff  binary
+*.woff2 binary
