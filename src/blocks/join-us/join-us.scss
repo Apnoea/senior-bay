@@ -1,0 +1,52 @@
+.join-us {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 35px 110px 35px 220px;
+  background-color: $grey200;
+  border-radius: 100px;
+  transition: 0.3s;
+  overflow: hidden;
+  &:hover {
+    color: #fff;
+    &::before {
+      right: 0;
+      border-width: 220px;
+    }
+    &::after {
+      transform: translateY(-50%) rotate(-45deg);
+      background-color: $black;
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m18.034 10.095-7.815-8.029L11.614.633l9.498 9.759.698.717-.697.716-9.5 9.76-1.394-1.434 7.815-8.03H1.418v-2.026h16.615Z' fill='%23fff'/%3E%3C/svg%3E");
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    border: 25px solid $lblue700;
+    border-radius: 50%;
+    background-color: $lblue700;
+    transition: 0.3s;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $lblue700;
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m18.034 10.095-7.815-8.029L11.614.633l9.498 9.759.698.717-.697.716-9.5 9.76-1.394-1.434 7.815-8.03H1.418v-2.026h16.615Z' fill='%23171639'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+  }
+  &__ui-text-button {
+    position: relative;
+    z-index: 1;
+  }
+}

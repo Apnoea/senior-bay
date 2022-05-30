@@ -1,10 +1,11 @@
 .about {
   margin-top: 190px;
-  padding: 45px 45px 60px 65px;
   .inner {
-    position: relative;
     padding: 0;
     transition: 0.3s;
+  }
+  .about__wrapper {
+    position: relative;
   }
   &__card {
     &.card--default {
@@ -16,6 +17,16 @@
       position: absolute;
       top: 45px;
       right: 45px;
+    }
+    &.card--supported {
+      position: absolute;
+      right: 45px;
+      bottom: 57px;
+    }
+    &.card--text {
+      position: absolute;
+      bottom: 57px;
+      left: 66px;
     }
   }
   &--active {

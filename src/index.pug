@@ -1,12 +1,13 @@
 extends layouts/layout
 
 block variables
-  -const pageTitle = 'Index'
+  -const pageTitle ='Next-gen gaming company'
 
 block content
   main
     .inner
-      +ui-h1(pageTitle)
-      a(href='blocks.html') Repository blocks
-      br
-      a(href='main.html') Main
+      +main-banner
+    +about
+    .inner
+      +who-is
+      +contacts

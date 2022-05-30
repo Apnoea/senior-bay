@@ -17,9 +17,9 @@ mixin card(type, mods)
         .card__image
           img(src='img/avatar_img1.png', alt='Senior Bay')
         .card__text
-          +ui-h3('Senior Bay')
-          +ui-text3('Take your co-expertise to the next level')
-        +ui-text-tags('just now')
+          +ui-h3('Senior Bay', 'card')
+          +ui-text3('Take your <br>co-expertise <br>to the next level')
+        +ui-text-tags('just now', 'card')
         block
     when 'default'
       .card.card--default(class=allMods)&attributes(attributes)
@@ -48,4 +48,16 @@ mixin card(type, mods)
             .card__avatar
               img(src='img/avatar_img5.png', alt='Tammy')
             +ui-text-tags('Tammy', 'card')
+        block
+    when 'supported'
+      .card.card--supported(class=allMods)&attributes(attributes)
+        +ui-text4('Supported', 'card')
+        +ui-h3('DMCC')
+        +ui-text-tags('THE WORLD’S #1 FREEZONE', 'card')
+        block
+    when 'text'
+      .card.card--text(class=allMods)&attributes(attributes)
+        block
+    default
+      .card(class=allMods)&attributes(attributes)
         block
