@@ -1,3 +1,16 @@
 .contacts {
-  position: relative;
+  margin-top: 100px;
+  &__images {
+    display: flex;
+    margin-top: 180px;
+  }
+  &__image {
+    &:first-child {
+      max-width: 387px;
+      margin-right: 40px;
+    }
+    &:last-child {
+      max-width: 578px;
+    }
+  }
 }

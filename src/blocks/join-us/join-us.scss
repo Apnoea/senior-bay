@@ -7,6 +7,9 @@
   border-radius: 100px;
   transition: 0.3s;
   overflow: hidden;
+  @include media-laptop {
+    padding: 23px 82px 22px 215px;
+  }
   &:hover {
     color: #fff;
     &::before {
@@ -25,10 +28,13 @@
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-    border: 25px solid $lblue700;
+    border: 0 solid $lblue700;
     border-radius: 50%;
     background-color: $lblue700;
     transition: 0.3s;
+    @include media-laptop {
+      right: 20px;
+    }
   }
   &::after {
     content: '';
@@ -44,6 +50,11 @@
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.3s;
+    @include media-laptop {
+      right: 20px;
+      width: 44px;
+      height: 44px;
+    }
   }
   &__ui-text-button {
     position: relative;

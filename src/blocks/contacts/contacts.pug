@@ -11,8 +11,11 @@ mixin contacts(mods)
     }
 
   #contacts.contacts(class=allMods)&attributes(attributes)
-    .about__image
-      img(src='', alt='')
-      img(src='', alt='')
-    +ui-text1('We are part of DMCC ecosystem')
+    .contacts__images
+      .contacts__image
+        img(src='img/contacts_img1.png', alt='')
+      .contacts__image
+        img(src='img/contacts_img2.png', alt='')
+    +card('', 'contacts')
+      +ui-text1('We are part of DMCC ecosystem')
     block
