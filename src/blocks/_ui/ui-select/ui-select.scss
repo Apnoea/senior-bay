@@ -26,7 +26,7 @@
         height: 50px;
         padding-right: 40px;
         background: #fff;
-        border: 1px solid $teal;
+        border: 1px solid teal;
         border-radius: 6px;
         transition: border 0.3s;
         &__placeholder {
@@ -141,7 +141,7 @@
         }
         &__group {
           padding-left: 14px;
-          color: $teal;
+          color: teal;
         }
         &__option {
           padding: 6px 0 6px 14px;
@@ -152,7 +152,7 @@
             padding-left: 0;
           }
           &--highlighted {
-            background-color: $teal;
+            background-color: teal;
             &.select2-results__option--selectable {
               color: $black;
             }
@@ -163,7 +163,7 @@
     &.select2-container--open {
       .select2 {
         &-selection {
-          border-color: $teal;
+          border-color: teal;
           .select2-search,
           &__arrow {
             &::after {

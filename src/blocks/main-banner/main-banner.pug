@@ -1,0 +1,20 @@
+mixin main-banner(mods)
+  -
+    const baseName = 'main-banner'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  .main-banner(class=allMods)&attributes(attributes)
+    +ui-h1(pageTitle)
+    +card('main-banner')
+    .main-banner__image
+      img(src='img/svgs/main-banner_img.svg', alt='')
+    a.main-banner__button(href='#contacts')
+      +ui-text-button('Join Us')
+    block

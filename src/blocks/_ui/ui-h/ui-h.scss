@@ -1,49 +1,38 @@
 .ui-h1 {
-  font: 54px/1.3 $font;
+  font: 260px/0.82 $font;
   @include media-laptop {
-    font-size: 36px;
+    font-size: 160px;
+    line-height: 0.9;
   }
   @include media-tablet {
-    font-size: 32px;
+    font-size: 140px;
+    line-height: 0.86;
+  }
+  @include media-mobile {
+    font-size: 70px;
   }
 }
 .ui-h2 {
-  font: 40px/1.3 $font;
+  font: 120px/1 $font;
   @include media-laptop {
-    font-size: 30px;
+    font-size: 66px;
   }
   @include media-tablet {
-    font-size: 22px;
+    font-size: 80px;
+  }
+  @include media-mobile {
+    font-size: 42px;
   }
 }
 .ui-h3 {
-  font: 32px/1.3 $font;
+  font: 700 30px/1 $font;
   @include media-laptop {
     font-size: 24px;
-    line-height: 1.4;
   }
   @include media-tablet {
-    font-size: 18px;
+    font-size: 28px;
   }
-}
-.ui-h4 {
-  font: 24px/1.3 $font;
-  @include media-laptop {
+  @include media-mobile {
     font-size: 22px;
-  }
-  @include media-tablet {
-    font-size: 16px;
-  }
-}
-.ui-h5 {
-  font: 20px/1.3 $font;
-  @include media-laptop {
-    font-size: 16px;
-  }
-}
-.ui-h6 {
-  font: 16px/1.3 $font;
-  @include media-laptop {
-    font-size: 14px;
   }
 }

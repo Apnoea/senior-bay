@@ -1,0 +1,22 @@
+mixin about(mods)
+  -
+    const baseName = 'about'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  #about.about(class=allMods)&attributes(attributes)
+    .inner
+      .about_image
+        img(src='img/about_img.png', alt='')
+      +card('default', 'about')
+      +card('friends-list', 'about')
+      +card('', 'about')
+      +card('', 'about')
+        +ui-text1('We create and invest in mobile F2P projects at the intersection of fresh trends and hybrid mechanics')
+      block

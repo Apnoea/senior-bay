@@ -1,0 +1,51 @@
+mixin card(type, mods)
+  -
+    const baseName = 'card'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  case type
+    when 'main-banner'
+      .card.card--main-banner(class=allMods)&attributes(attributes)
+        .card__close
+        .card__image
+          img(src='img/avatar_img1.png', alt='Senior Bay')
+        .card__text
+          +ui-h3('Senior Bay')
+          +ui-text3('Take your co-expertise to the next level')
+        +ui-text-tags('just now')
+        block
+    when 'default'
+      .card.card--default(class=allMods)&attributes(attributes)
+        +ui-text4('Username', 'card')
+        +ui-text-tags('ADVANCED', 'card')
+        .card__container
+          .card__avatar
+            img(src='img/avatar_img2.png', alt='Cassidy')
+          .card__text
+            +ui-h3('Senior Bay', 'card')
+            +ui-text-tags('GAME DEV DEVELOPMENT')
+        block
+    when 'friends-list'
+      .card.card--friends-list(class=allMods)&attributes(attributes)
+        +ui-text4('Friends (114)', 'card')
+        .card__container
+          .card__item
+            .card__avatar
+              img(src='img/avatar_img3.png', alt='Cassidy')
+            +ui-text-tags('Cassidy', 'card')
+          .card__item
+            .card__avatar
+              img(src='img/avatar_img4.png', alt='Chris')
+            +ui-text-tags('Chris', 'card')
+          .card__item
+            .card__avatar
+              img(src='img/avatar_img5.png', alt='Tammy')
+            +ui-text-tags('Tammy', 'card')
+        block

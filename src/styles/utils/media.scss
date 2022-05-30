@@ -8,6 +8,11 @@
     @content;
   }
 }
+@mixin media-mobile {
+  @media (max-width: $mediaWidthMobile) {
+    @content;
+  }
+}
 @mixin media-custom($width) {
   @media (max-width: $width) {
     @content;

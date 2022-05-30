@@ -1002,11 +1002,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fancyapps/ui@^4.0.27":
-  version "4.0.27"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.27.tgz#0b34e508c45b7d9e414e602d130052628124eb10"
-  integrity sha512-IpLREaLVhLGxcYeloCHrSuuPErRP4oEiLDgztZZMcBaKM4NnvRifw7MbU8unDKX+KCL+Ai9mEtH6J17zQ8FEig==
-
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -4174,11 +4169,6 @@ flat-cache@^3.0.4:
     flatted "^3.1.0"
     rimraf "^3.0.2"
 
-flatpickr@^4.6.13:
-  version "4.6.13"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.13.tgz#8a029548187fd6e0d670908471e43abe9ad18d94"
-  integrity sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==
-
 flatted@^3.1.0:
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
@@ -6486,11 +6476,6 @@ normalize.css@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
   integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
-
-nouislider@^15.6.0:
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-15.6.0.tgz#706b37b8cd485037353dcdb8bb387f9d2704c37c"
-  integrity sha512-YJg+A6RQXTuFqhEwd42FeRaEGMGgDSSNnpIyVtT8XJrNl4VBEUkPI6Yj91bT3JjJIvNYi4VdppWeCV+z2gOnnw==
 
 now-and-later@^2.0.0:
   version "2.0.1"

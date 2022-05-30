@@ -3,8 +3,8 @@
     display: none;
     &:checked + label {
       &::before {
-        background: $teal;
-        border-color: $teal;
+        background: teal;
+        border-color: teal;
       }
       &::after {
         opacity: 1;
@@ -47,7 +47,7 @@
     a {
       display: inline;
       text-decoration: underline;
-      color: $teal;
+      color: teal;
     }
   }
 }

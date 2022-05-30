@@ -5,12 +5,11 @@
     padding: 15px 20px;
     font: 16px/1.5 $font;
     background: #fff;
-    border: 1px solid $teal;
     border-radius: 6px;
     outline: 0;
     resize: none;
     &.parsley-error {
-      border-color: $orange;
+      border-color: red;
     }
   }
   &__counter {
@@ -25,7 +24,7 @@
     bottom: -30px;
     left: 0;
     font: 300 14px/1 $font;
-    color: $orange;
+    color: red;
     background: #fff;
     border-radius: 4px;
     &.filled {

@@ -1,9 +1,13 @@
 extends layouts/layout
 
 block variables
-  -const pageTitle ='Main'
+  -const pageTitle ='Next-gen gaming company'
 
 block content
   main
     .inner
-      +ui-h1(pageTitle)
+      +main-banner
+    +about
+    .inner
+      +who-is
+      +contacts

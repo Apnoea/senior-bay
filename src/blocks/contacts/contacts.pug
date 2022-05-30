@@ -1,0 +1,18 @@
+mixin contacts(mods)
+  -
+    const baseName = 'contacts'
+    let allMods = ''
+    if (typeof mods !== 'undefined' && mods) {
+      const modsList = mods.split(',')
+      for (const element of modsList) {
+        allMods += element.trim()[0] === '-' ? ' ' + baseName + element.trim() : ' ' + element.trim() + '__' + baseName
+      }
+      allMods = allMods.trim()
+    }
+
+  #contacts.contacts(class=allMods)&attributes(attributes)
+    .about__image
+      img(src='', alt='')
+      img(src='', alt='')
+    +ui-text1('We are part of DMCC ecosystem')
+    block

@@ -1,0 +1,20 @@
+.main-banner {
+  position: relative;
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 35px 110px 35px 220px;
+    background-color: $grey200;
+    border-radius: 100px;
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

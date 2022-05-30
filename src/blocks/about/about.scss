@@ -1,0 +1,26 @@
+.about {
+  margin-top: 190px;
+  padding: 45px 45px 60px 65px;
+  .inner {
+    position: relative;
+    padding: 0;
+    transition: 0.3s;
+  }
+  &__card {
+    &.card--default {
+      position: absolute;
+      top: 45px;
+      left: 66px;
+    }
+    &.card--friends-list {
+      position: absolute;
+      top: 45px;
+      right: 45px;
+    }
+  }
+  &--active {
+    .inner {
+      padding: 0 90px;
+    }
+  }
+}

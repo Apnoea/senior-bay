@@ -13,7 +13,7 @@ mixin ui-ul(listItems, mods)
   ul.ui-ul(class=allMods)&attributes(attributes)
     each item in listItems
       li
-        +ui-p2(item.title)
+        +ui-text2(item.title)
         if item.descr
-          +ui-p2(item.descr, '--light')
+          +ui-text2(item.descr, '--light')
     block
