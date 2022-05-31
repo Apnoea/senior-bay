@@ -1,6 +1,9 @@
 .contacts {
+  display: flex;
+  align-items: center;
   margin-top: 100px;
   &__images {
+    flex-shrink: 0;
     display: flex;
     margin-top: 180px;
   }
@@ -12,5 +15,10 @@
     &:last-child {
       max-width: 578px;
     }
+  }
+  &__card {
+    width: 570px;
+    margin-left: -50px;
+    padding: 52px 84px 77px 47px;
   }
 }

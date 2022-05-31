@@ -1,5 +1,10 @@
 .main-banner {
   position: relative;
+  &__ui-h1 {
+    span {
+      display: block;
+    }
+  }
   &__image {
     position: absolute;
     top: 0;

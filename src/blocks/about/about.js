@@ -1,3 +1,6 @@
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
 export default function about() {
   const aboutBlock = document.querySelector('#about')
   const halfWindowHeight = window.innerHeight / 2

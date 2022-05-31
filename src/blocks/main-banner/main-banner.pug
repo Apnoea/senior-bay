@@ -11,7 +11,10 @@ mixin main-banner(mods)
     }
 
   .main-banner(class=allMods)&attributes(attributes)
-    +ui-h1(pageTitle)
+    +ui-h1('', 'main-banner')
+      span Next-gen
+      span gaming
+      span company
     +card('main-banner', 'main-banner')
     .main-banner__image
       img(src='img/svgs/main-banner_img.svg', alt='')
