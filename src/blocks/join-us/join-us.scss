@@ -12,23 +12,19 @@
   }
   &:hover {
     color: #fff;
-    &::before {
-      right: 0;
-      border-width: 220px;
-    }
     &::after {
       transform: translateY(-50%) rotate(-45deg);
       background-color: $black;
       background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m18.034 10.095-7.815-8.029L11.614.633l9.498 9.759.698.717-.697.716-9.5 9.76-1.394-1.434 7.815-8.03H1.418v-2.026h16.615Z' fill='%23fff'/%3E%3C/svg%3E");
     }
   }
-  &::before {
+  &__background {
     content: '';
     position: absolute;
     top: 50%;
     right: 30px;
-    transform: translateY(-50%);
-    border: 0 solid $lblue700;
+    transform: translateY(-50%) scale(1);
+    border: 25px solid $lblue700;
     border-radius: 50%;
     background-color: $lblue700;
     transition: 0.3s;

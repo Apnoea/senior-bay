@@ -1,6 +1,6 @@
-mixin main-banner(mods)
+mixin main-block(mods)
   -
-    const baseName = 'main-banner'
+    const baseName = 'main-block'
     let allMods = ''
     if (typeof mods !== 'undefined' && mods) {
       const modsList = mods.split(',')
@@ -10,13 +10,13 @@ mixin main-banner(mods)
       allMods = allMods.trim()
     }
 
-  .main-banner(class=allMods)&attributes(attributes)
-    +ui-h1('', 'main-banner')
+  #mainBlock.main-block(class=allMods)&attributes(attributes)
+    +ui-h1('', 'main-block')
       span Next-gen
       span gaming
       span company
-    +card('main-banner', 'main-banner')
-    .main-banner__image
-      img(src='img/svgs/main-banner_img.svg', alt='')
+    +card('main-block', 'main-block')
+    .main-block__image
+      img(src='img/svgs/main-block_img.svg', alt='')
     +join-us
     block

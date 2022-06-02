@@ -6,7 +6,7 @@ import uiTextarea from '../blocks/_ui/ui-textarea/ui-textarea'
 import uiTooltip from '../blocks/_ui/ui-tooltip/ui-tooltip'
 import about from '../blocks/about/about'
 import card from '../blocks/card/card'
-import sliderInit from '../blocks/slider/slider'
+import mainBlock from '../blocks/main-block/main-block'
 
 document.addEventListener('DOMContentLoaded', function () {
   uiInput()
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   anchorsSoftScroll()
   about()
   card()
-  sliderInit()
+  mainBlock()
 })
 
 function anchorsSoftScroll() {

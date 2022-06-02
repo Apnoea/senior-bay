@@ -11,8 +11,8 @@ mixin card(type, mods)
     }
 
   case type
-    when 'main-banner'
-      .card.card--main-banner(class=allMods)&attributes(attributes)
+    when 'main-block'
+      .card.card--main-block(class=allMods)&attributes(attributes)
         .card__close
         .card__image
           img(src='img/avatar_img1.png', alt='Senior Bay')

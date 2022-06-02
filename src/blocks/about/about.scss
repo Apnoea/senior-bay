@@ -2,12 +2,14 @@
   margin-top: 190px;
   .inner {
     padding: 0;
-    transition: 0.3s;
   }
   .about__wrapper {
     position: relative;
   }
   &__card {
+    transform: translateY(50%);
+    opacity: 0;
+    transition: 0.3s;
     &.card--default {
       position: absolute;
       top: 45px;
@@ -28,10 +30,9 @@
       bottom: 57px;
       left: 66px;
     }
-  }
-  &--active {
-    .inner {
-      padding: 0 90px;
+    &.card--visible {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

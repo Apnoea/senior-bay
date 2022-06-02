@@ -1,6 +1,8 @@
 .header {
   flex: 0 1;
   padding: 30px 0;
+  transform: translateY(-100%);
+  transition: 0.3s;
   @include media-mobile {
     padding: 25px 0;
   }
@@ -41,5 +43,8 @@
     &:hover {
       cursor: url('../img/svgs/cursor.svg'), auto;
     }
+  }
+  &--active {
+    transform: translateY(0);
   }
 }
