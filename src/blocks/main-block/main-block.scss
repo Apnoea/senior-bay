@@ -1,8 +1,15 @@
 .main-block {
   position: relative;
-  &__ui-h1 {
+  .word {
     span {
-      display: block;
+      display: inline-block;
+      transform: translateY(25%);
+      opacity: 0;
+      transition: 0.3s;
+      &.active {
+        transform: translate(0);
+        opacity: 1;
+      }
     }
   }
   &__image {
