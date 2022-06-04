@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
   about()
   card()
   mainBlock()
-  animateLetters()
 })
 
 function anchorsSoftScroll() {
@@ -28,23 +27,4 @@ function anchorsSoftScroll() {
     })
     return false
   })
-}
-
-function shuffle(o) {
-  for (let j, x, i = o.length; i; j = Number.parseInt(Math.random() * i, 10), x = o[--i], o[i] = o[j], o[j] = x);
-  return o
-}
-
-function animateLetters() {
-  const letters = document.querySelectorAll('.word span')
-  const letterArray = []
-  for (const [index, letter] of letters.entries()) {
-    letterArray.push(index)
-  }
-  shuffle(letterArray)
-  for (const [index, item] of letterArray.entries()) {
-    setTimeout(() => {
-      letters[item].classList.add('active')
-    }, 50 + index * 50)
-  }
 }

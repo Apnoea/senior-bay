@@ -1,17 +1,5 @@
 .main-block {
   position: relative;
-  .word {
-    span {
-      display: inline-block;
-      transform: translateY(25%);
-      opacity: 0;
-      transition: 0.3s;
-      &.active {
-        transform: translate(0);
-        opacity: 1;
-      }
-    }
-  }
   &__image {
     position: absolute;
     top: 0;

@@ -12,15 +12,9 @@ mixin main-block(mods)
 
   #mainBlock.main-block(class=allMods)&attributes(attributes)
     +ui-h1('', 'main-block')
-      .word
-        each item in 'Next-gen'.split('')
-          span=item
-      .word
-        each item in 'gaming'.split('')
-          span=item
-      .word
-        each item in 'company'.split('')
-          span=item
+      +letters('Next-gen')
+      +letters('gaming')
+      +letters('company')
     +card('main-block', 'main-block')
     .main-block__image
       img(src='img/svgs/main-block_img.svg', alt='')

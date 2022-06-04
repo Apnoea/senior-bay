@@ -7,9 +7,6 @@
     position: relative;
   }
   &__card {
-    transform: translateY(50%);
-    opacity: 0;
-    transition: 0.3s;
     &.card--default {
       position: absolute;
       top: 45px;
@@ -29,10 +26,6 @@
       position: absolute;
       bottom: 57px;
       left: 66px;
-    }
-    &.card--visible {
-      transform: translateY(0);
-      opacity: 1;
     }
   }
 }

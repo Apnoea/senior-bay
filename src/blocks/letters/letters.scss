@@ -1,0 +1,9 @@
+.letters {
+  span {
+    opacity: 0;
+    transition: 1s;
+    &.active {
+      opacity: 1;
+    }
+  }
+}

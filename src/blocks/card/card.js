@@ -9,3 +9,13 @@ export default function card() {
     }
   }
 }
+
+export function showCards(element) {
+  const targetBlock = document.querySelector(element)
+  const cardBlocks = targetBlock.querySelectorAll('.card')
+  for (const [index, cardItem] of cardBlocks.entries()) {
+    setTimeout(() => {
+      cardItem.classList.add('card--visible')
+    }, 500 + index * 500)
+  }
+}

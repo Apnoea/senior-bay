@@ -1,29 +1,28 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import header from '../header/header'
+import letters from '../letters/letters'
+import { showCards } from '../card/card'
 
 export default function mainBlock() {
+  const trigger = '#mainBlock'
+
   gsap.registerPlugin(ScrollTrigger)
-  // consistentlyAnimations([header, 'mainTitle', 'mainCard'])
 
   gsap.timeline({
     scrollTrigger: {
-      trigger: '#mainBlock',
+      trigger: trigger,
       start: 'center center',
       end: 'bottom center',
       markers: true,
       scrub: true
     }
   })
-    .to('.join-us .join-us__background', { scale: 20 }, 0)
+    .to('.join-us .join-us__background', { scale: 16 }, 0)
 
-  header()
+  setTimeout(() => {
+    header()
+    letters(trigger)
+    showCards(trigger)
+  }, 1000)
 }
-
-// function consistentlyAnimations(elements) {
-//   for (const [index, element] of elements.entries()) {
-//     setTimeout(() => {
-//       console.log(index, element)
-//     }, 500 + index * 1000)
-//   }
-// }

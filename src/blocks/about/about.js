@@ -1,5 +1,7 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { showCards } from '../card/card'
+import letters from '../letters/letters'
 
 export default function about() {
   gsap.registerPlugin(ScrollTrigger)
@@ -11,17 +13,14 @@ export default function about() {
       end: '25% center',
       markers: true,
       scrub: true,
-      onLeave: () => showCards()
+      onLeave: () => showCards('#about')
     }
   })
     .to('#about .inner', { padding: '0 90px' }, 0)
-}
 
-function showCards() {
-  const cards = document.querySelectorAll('#about .card')
-  for (const [index, card] of cards.entries()) {
-    setTimeout(() => {
-      card.classList.add('card--visible')
-    }, 500 + index * 500)
-  }
+  window.addEventListener('scroll', () => {
+    if (document.querySelector('#about .card--text').classList.contains('card--visible')) {
+      letters('#about')
+    }
+  })
 }
