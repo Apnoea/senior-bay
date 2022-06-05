@@ -14,6 +14,9 @@
   }
   &--default {
     padding: 29px 33px 16px 31px;
+    @include media-laptop {
+      padding: 19px 19px 23px 27px;
+    }
     .card__container {
       display: flex;
       align-items: center;
@@ -29,9 +32,15 @@
   }
   &--friends-list {
     padding: 29px 46px 19px 27px;
+    @include media-laptop {
+      padding: 19px 47px 17px 22px;
+    }
     .card__ui-text4 {
       margin-bottom: 17px;
       opacity: 0.6;
+      @include media-laptop {
+        margin-bottom: 11px;
+      }
     }
     .card__container {
       display: flex;
@@ -39,18 +48,29 @@
     .card__item {
       &:not(:last-child) {
         margin-right: 16px;
+        @include media-laptop {
+          margin-right: 14px;
+        }
       }
     }
     .card__avatar {
       width: 95px;
       height: 95px;
       margin-bottom: 10px;
+      @include media-laptop {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   &--supported {
     position: relative;
-    width: 390px;
+    max-width: 390px;
     padding: 24px 30px 23px 27px;
+    @include media-laptop {
+      max-width: 337px;
+      padding: 19px 18px 18px 22px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -75,5 +95,9 @@
   &--text {
     max-width: 1100px;
     padding: 49px 34px 29px 54px;
+    @include media-laptop {
+      max-width: 610px;
+      padding: 38px 73px 35px 36px;
+    }
   }
 }
