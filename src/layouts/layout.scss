@@ -12,6 +12,7 @@ html {
 }
 body {
   margin: 0;
+  overflow: hidden;
 }
 img {
   display: block;
@@ -69,11 +70,20 @@ blockquote {
       padding: 0 40px;
     }
     @include media-mobile {
-      padding: 0;
+      padding: 0 25px;
     }
   }
   main {
     flex: 1 0;
-    padding: 130px 0 70px;
+    padding: 0 0 70px;
   }
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: #e0e0e0;
 }

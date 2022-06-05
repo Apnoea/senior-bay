@@ -15,8 +15,9 @@ mixin main-block(mods)
       +letters('Next-gen')
       +letters('gaming')
       +letters('company')
-    +card('main-block', 'main-block')
-    .main-block__image
-      img(src='img/svgs/main-block_img.svg', alt='')
-    +join-us
+    .main-block__content
+      .main-block__image
+        img(src='img/svgs/main-block_img.svg', alt='')
+      +card('main-block', 'main-block')
+      +join-us('main-block')
     block

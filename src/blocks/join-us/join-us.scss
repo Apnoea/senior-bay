@@ -1,7 +1,5 @@
 .join-us {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
   padding: 35px 110px 35px 220px;
   background-color: $grey200;
   border-radius: 100px;
@@ -9,6 +7,9 @@
   overflow: hidden;
   @include media-laptop {
     padding: 23px 82px 22px 215px;
+  }
+  @include media-mobile {
+    padding: 15px 60px 15px 100px;
   }
   &:hover {
     color: #fff;
@@ -24,12 +25,18 @@
     top: 50%;
     right: 30px;
     transform: translateY(-50%) scale(1);
-    border: 25px solid $lblue700;
-    border-radius: 50%;
     background-color: $lblue700;
+    border-radius: 50%;
     transition: 0.3s;
     @include media-laptop {
       right: 20px;
+      width: 44px;
+      height: 44px;
+    }
+    @include media-mobile {
+      right: 16px;
+      width: 35px;
+      height: 35px;
     }
   }
   &::after {
@@ -50,6 +57,12 @@
       right: 20px;
       width: 44px;
       height: 44px;
+    }
+    @include media-mobile {
+      right: 16px;
+      width: 35px;
+      height: 35px;
+      background-size: 15px;
     }
   }
   &__ui-text-button {

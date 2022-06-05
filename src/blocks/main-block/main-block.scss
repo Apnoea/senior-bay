@@ -1,26 +1,54 @@
 .main-block {
   position: relative;
-  &__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    @include media-laptop {
-      max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+  @include media-laptop {
+    margin-top: 100px;
+  }
+  @include media-tablet {
+    display: block;
+    margin-top: 85px;
+  }
+  @include media-mobile {
+    margin-top: 35px;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include media-tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include media-mobile {
+      margin-top: 25px;
     }
   }
   &__card {
     position: absolute;
     top: 40%;
-    left: 55%;
+    left: -65%;
     z-index: 1;
     display: flex;
     width: 425px;
     padding: 21px 25px 48px;
     @include media-laptop {
       top: 38%;
-      left: 53%;
+      left: -40%;
       width: 330px;
       padding: 15px 26px 14px 19px;
+    }
+    @include media-tablet {
+      top: 110px;
+      right: 0;
+      left: auto;
+    }
+    @include media-mobile {
+      top: 8px;
+      right: 8px;
+      width: 226px;
     }
     &.card--hidden {
       opacity: 0;
@@ -71,6 +99,29 @@
           }
         }
       }
+    }
+  }
+  &__image {
+    max-width: 450px;
+    @include media-laptop {
+      max-width: 295px;
+    }
+    @include media-tablet {
+      max-width: 665px;
+    }
+    @include media-mobile {
+      max-width: 100%;
+    }
+  }
+  &__join-us {
+    margin-top: auto;
+    @include media-tablet {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+    }
+    @include media-mobile {
+      bottom: 24px;
     }
   }
 }

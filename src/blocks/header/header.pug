@@ -12,4 +12,5 @@ header.header
     .header__menu
       each item in headerMenuItems
         a.header__item(href=item.anchor)
-          +ui-text-menu(item.title)
+          .header__item-background
+          +ui-text-menu(item.title, 'header')

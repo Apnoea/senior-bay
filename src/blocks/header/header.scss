@@ -15,9 +15,23 @@
     padding: 20px 50px;
     background-color: $grey200;
     border-radius: 60px;
+    @include media-laptop {
+      padding: 20px 40px;
+    }
+    @include media-tablet {
+      padding: 15px 20px;
+    }
     svg {
       width: 198px;
       height: 22px;
+      @include media-laptop {
+        width: 165px;
+        height: 19px;
+      }
+      @include media-tablet {
+        width: 154px;
+        height: 18px;
+      }
     }
   }
   &__menu {
@@ -28,9 +42,16 @@
   }
   &__item {
     position: relative;
+    overflow: hidden;
     padding: 17px 40px;
     background-color: $grey200;
     border-radius: 60px;
+    @include media-laptop {
+      padding: 17px 32px;
+    }
+    @include media-tablet {
+      padding: 15px 32px;
+    }
     &:not(:last-child) {
       margin-right: 12px;
       @include media-laptop {
@@ -42,7 +63,25 @@
     }
     &:hover {
       cursor: url('../img/svgs/cursor.svg'), auto;
+      .header__item-background {
+        transform: scale(35);
+      }
     }
+  }
+  &__item-background {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transform: scale(0);
+    width: 10px;
+    height: 10px;
+    background-color: $lblue700;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  &__ui-text-menu {
+    position: relative;
+    z-index: 1;
   }
   &--active {
     transform: translateY(0);

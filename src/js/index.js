@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   about()
   card()
   mainBlock()
+  preloader()
 })
 
 function anchorsSoftScroll() {
@@ -26,5 +27,13 @@ function anchorsSoftScroll() {
       scrollTop: `${$(_href).offset().top - 100}px`
     })
     return false
+  })
+}
+
+function preloader() {
+  window.addEventListener('load', function () {
+    const element = document.querySelector('#preloader')
+    document.querySelector('body').style.overflow = 'unset'
+    element.style.display = 'none'
   })
 }
