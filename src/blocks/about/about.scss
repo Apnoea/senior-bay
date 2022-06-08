@@ -23,21 +23,40 @@
       position: absolute;
       top: 45px;
       left: 66px;
+      @include media-tablet {
+        top: 41px;
+        left: 36px;
+      }
     }
     &.card--friends-list {
       position: absolute;
       top: 45px;
       right: 45px;
+      @include media-tablet {
+        top: 260px;
+        right: auto;
+        left: 36px;
+      }
     }
     &.card--supported {
       position: absolute;
       right: 45px;
       bottom: 57px;
+      @include media-tablet {
+        top: 71px;
+        right: 38px;
+        bottom: auto;
+      }
     }
     &.card--text {
       position: absolute;
       bottom: 57px;
       left: 66px;
+      @include media-tablet {
+        right: 38px;
+        bottom: 51px;
+        left: 36px;
+      }
     }
   }
 }
