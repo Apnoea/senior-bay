@@ -20,11 +20,7 @@ const third = () => {
   const startLetters = () => letters('#third');
 
   const waitLetters = throttle(() => {
-    console.log(3);
-
     if (!checkOutsideThird()) {
-      console.log(4);
-
       window.removeEventListener('scroll', waitLetters);
 
       startLetters();
@@ -33,12 +29,8 @@ const third = () => {
 
   const initLetters = () => {
     if (!checkOutsideThird()) {
-      console.log(1);
-
       startLetters();
     } else {
-      console.log(2);
-
       window.addEventListener('scroll', waitLetters);
     }
   };
