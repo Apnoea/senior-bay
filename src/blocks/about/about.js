@@ -22,16 +22,10 @@ export default function about() {
       trigger: '#about',
       start: 'top center',
       end: '25% center',
-      markers: true,
+      // markers: true,
       scrub: true,
       onLeave: () => showCards('#about')
     }
   })
     .to('#about .inner', { padding: paddingValue }, 0)
-
-  window.addEventListener('scroll', () => {
-    if (document.querySelector('#about .card--text').classList.contains('card--visible')) {
-      letters('#about')
-    }
-  })
 }

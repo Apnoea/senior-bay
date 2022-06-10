@@ -9,7 +9,7 @@ export default function joinUs() {
       trigger: '#mainBlock',
       start: 'center center',
       end: 'bottom center',
-      markers: true,
+      // markers: true,
       scrub: true
     }
   })

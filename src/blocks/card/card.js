@@ -1,3 +1,5 @@
+import letters from '../letters/letters'
+
 export default function card() {
   const cards = document.querySelectorAll('.card')
   for (const cardItem of cards) {
@@ -15,7 +17,9 @@ export function showCards(element) {
   const cardBlocks = targetBlock.querySelectorAll('.card')
   for (const [index, cardItem] of cardBlocks.entries()) {
     setTimeout(() => {
+      const promise = new Promise((resolve, reject) => {})
       cardItem.classList.add('card--visible')
+      promise.then(letters(element))
     }, 500 + index * 500)
   }
 }

@@ -16,10 +16,11 @@ mixin about(mods)
         .about__image
           img(src='img/about_img.png', alt='')
         .about__content
-          +card('default', 'about')
-          +card('friends-list', 'about')
+          .about__wrap
+            +card('default', 'about')
+            +card('friends-list', 'about')
+            +card('supported', 'about')
           +card('text', 'about')
-            +ui-text1('')
-              +letters('We create and invest in mobile F2P projects at the intersection of fresh trends and hybrid mechanics')
-          +card('supported', 'about')
+              +ui-text1('')
+                +letters('We create and invest in mobile F2P projects at the intersection of fresh trends and hybrid mechanics')
         block

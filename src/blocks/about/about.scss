@@ -43,13 +43,25 @@
       right: 25px;
       bottom: 30px;
       left: 25px;
-      display: flex;
-      align-items: flex-start;
       background: 0;
       border: 0;
       border-radius: 0;
       backdrop-filter: none;
       box-shadow: none;
+    }
+    @include media-mobile {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__wrap {
+    @include media-mobile {
+      display: flex;
+      align-items: flex-start;
+      overflow-x: scroll;
+      padding: 30px 25px;
     }
   }
   &__card {
