@@ -7,6 +7,7 @@ import uiTooltip from '../blocks/_ui/ui-tooltip/ui-tooltip'
 import about from '../blocks/about/about'
 import card from '../blocks/card/card'
 import mainBlock from '../blocks/main-block/main-block'
+import { third } from '../blocks/third/third'
 
 document.addEventListener('DOMContentLoaded', function () {
   uiInput()
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   card()
   mainBlock()
   preloader()
+  third()
 })
 
 function anchorsSoftScroll() {
